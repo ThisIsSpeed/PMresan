@@ -159,7 +159,7 @@ Get Out Of Here Idiot🖕
     else{
         apiRequest("sendphoto", array('chat_id' => $rpto, "photo" => $substtr));
     }
-	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🗣پیام شما ارسال شد. " ,"parse_mode" =>"HTML"));
+	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "sent. " ,"parse_mode" =>"HTML"));
     
 }  else if ($chat_id == $admin && $booleans[0] == "true") {
     
@@ -189,7 +189,7 @@ Get Out Of Here Idiot🖕
 		$memcout = count($membersidd)-1;
 	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+        'keyboard' => array(array('�ارسال به همه'),array('راهنما','�مخاطبان','بلاک ها'),array("تنظیمات")),
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
@@ -301,7 +301,7 @@ Get Out Of Here Idiot🖕
 		$memcout = count($membersidd)-1;
 	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+             'keyboard' => array(array('�ارسال به همه'),array('راهنما','�مخاطبان','بلاک ها'),array("تنظیمات")),
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
@@ -361,7 +361,7 @@ Get Out Of Here Idiot🖕
 		$memcout = count($membersidd)-1;
 	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+        'keyboard' => array(array('�ارسال به همه'),array('راهنما','�مخاطبان','بلاک ها'),array("تنظیمات"))
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
@@ -415,7 +415,7 @@ Get Out Of Here Idiot🖕
 		$memcout = count($membersidd)-1;
 	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+        'keyboard' => array(array('�ارسال به همه'),array('راهنما','�مخاطبان','بلاک ها'),array("تنظیمات"))
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
@@ -470,7 +470,7 @@ Get Out Of Here Idiot🖕
 		$memcout = count($membersidd)-1;
 	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+        'keyboard' => array(array('�ارسال به همه'),array('راهنما','�مخاطبان','بلاک ها'),array("تنظیمات"))
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
@@ -527,7 +527,7 @@ else if ($chat_id == $admin && $booleans[0] == "true") {
 		$memcout = count($membersidd)-1;
 	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+        'keyboard' => array(array('�ارسال به همه'),array('راهنما','�مخاطبان','بلاک ها'),array("تنظیمات"))
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
@@ -562,10 +562,9 @@ $pmembersid= explode("\n",$txxt);
 }
 if($chat_id==$admin){
   apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => ' سلام قربان حوش آمدید😉
-برای پاسخ روی پیام مورد نظر ریپلای کنید و متن خود را بنویسید 😎
-برای آشنایی دکمه ی ⚓️ Help️ را بزنید 👌😃
+برای پاسخ روی پیام مورد نظر ریپلای کنید و متن خود را بنویسید �😃
 .',"parse_mode"=>"MARKDOWN", 'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+                'keyboard' => array(array('�ارسال به همه'),array('راهنما','�مخاطبان','بلاک ها'),array("تنظیمات"))
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
@@ -642,64 +641,64 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
     		 apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => '
 یکی از گزینه ها را انتخاب کنید
 —---------------------------------------------
-🔶🔸 Clean Members
+�حذف مخاطبین
 🔶🔸پاک کردن لیست مخاطبین
 
-🔷🔹Clean Block List
+�حذف لیست بلاک
 🔷🔹پاک کردن لیست سیاه
 
 در صورت انصراف Back را بزنید
 .', 'reply_markup' => array(
-        'keyboard' => array(array('❌ Clean Members ','❌ Clean Block List '),array('🔙 Back')),
+        'keyboard' => array(array('❌ حذف مخاطبین','❌حذف لیست بلاک','array('🔙 Back')),
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
     		
     		
     		
-    }else if ($text == "⚓️ Help" && $chat_id==$admin) {
+    }else if ($text == "راهنما" && $chat_id==$admin) {
       
     		apiRequest("sendMessage", array('chat_id' => $admin, "text" => "`برای پاسخ پیام مورد نظر را ریپلای کنید`
 🔷 لیست کامنت های موجود :
 
-🔹`1.` */ban*
+🔹`1.` *مسدود*
  قرار دادن مخاطب در لیست سیاه(با ریپلای) 
 —------------------------------
-🔹`2. `*/unban *
+🔹`2. `*حذف مسدود *
  پاک کردن مخاطب از لیست سیاه(با ریپلای)
 —------------------------------
-🔹`3. `*/setstart *
+🔹`3. `*شروع*
 اگر شخصی وارد ربات شما شود و */start* بزند این پیام  برای او ارسال میشود           */setstart* بزنید و در ادامه ی آن متن مورد نظر خود را بنویسید.
 مثال :
-*/setstart* سلام چطوری؟ اگه پیامی داری واسه من همینجا بفرست😃
+*سلام چطوری؟ اگه پیامی داری واسه من همینجا بفرست شروع
 —------------------------------
-🔹`4. `*/setdone *
+🔹`4. `*پاسخ
 اگر شخصی در ربات برای شما پیامی بفرستد این پیام برای او ارسال میشود.
 مثال :
-*/setdone* پیامت رسید صبر کن تا جواب بدم
+*پیامت رسید صبر کن تا جواب بدم پاسخ
 
 ➖➖➖➖➖➖➖➖➖➖➖
 🔶 لیست دکمه  های موجود :
 
-🔸`1.`*Send To All*
+🔸`1.`*ارسال به همه
 ارسال پیام متنی به همه ی کاربران
 —------------------------------
-🔸`2.`*Members*
+🔸`2.`*کاربران
 تعداد کاربران
 —------------------------------
-🔸`3.`*Blocked Users*
+🔸`3.`*لیست بلاک
 تعداد کاربران در لیست سیاه
 —-------------------------------
-🔸`4.`*Settings*
+🔸`4.`*تنظیمات
 تنظیمان ربات
 
 .","parse_mode" =>"MARKDOWN",'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+                'keyboard' => array(array('�ارسال به همه'),array('راهنما','�مخاطبان','بلاک ها'),array("تنظیمات"))
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
     		
-    }else if ($text == "❌ Clean Members" && $chat_id==$admin) {
+    }else if ($text == "حذف مخاطبین" && $chat_id==$admin) {
     		
     		
     		$txxt = file_get_contents('pmembers.txt');
@@ -707,19 +706,19 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
     		file_put_contents('pmembers.txt',"");
     		apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => 'لیست مخاطبین پاک شد ✔️
 .', 'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+         'keyboard' => array(array('�ارسال به همه'),array('راهنما','�مخاطبان','بلاک ها'),array("تنظیمات")),
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
     }
-    else if ($text == "❌ Clean Block List" && $chat_id==$admin) {
+    else if ($text == "حذف لیست بلاک" && $chat_id==$admin) {
     		
     		
     		$txxt = file_get_contents('banlist.txt');
         $pmembersid= explode("\n",$txxt);
     		file_put_contents('banlist.txt',"");
     		apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => 'لیست سیاه پاک شد ✔ ', 'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+        'keyboard' => array(array('�ارسال به همه'),array('راهنما','�مخاطبان','بلاک ها'),array("تنظیمات"))
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
@@ -727,7 +726,6 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
     else if ($text == "🔙 Back" && $chat_id==$admin) {
     		apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => 'سلام قربان حوش آمدید😉
 برای پاسخ روی پیام مورد نظر ریپلای کنید و متن خود را بنویسید 😎
-برای آشنایی دکمه ی ⚓️ Help️ را بزنید 👌😃
 .', 'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -756,7 +754,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 		$memcout = count($membersidd)-1;
 	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+         'keyboard' => array(array('�ارسال به همه'),array('راهنما','�مخاطبان','بلاک ها'),array("تنظیمات"))
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
@@ -767,18 +765,18 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 		$membersidd= explode("\n",$txtt);
 		$mmemcount = count($membersidd) -1;
 		 apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode" =>"HTML", "text" => "✅ تعداد کل مخاطبان : ".$mmemcount,'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+         'keyboard' => array(array('�ارسال به همه'),array('راهنما','�مخاطبان','بلاک ها'),array("تنظیمات")),
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
 		
 		
-	}else if($text == "❌ Blocked Users" && $chat_id == $admin ){
+	}else if($text == "لیست بلاک" && $chat_id == $admin ){
 		$txtt = file_get_contents('banlist.txt');
 		$membersidd= explode("\n",$txtt);
 		$mmemcount = count($membersidd) -1;
 		 apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode" =>"HTML", "text" => "🚫 تعداد کل افرادی که در لیست سیاه قرار دارند : ".$mmemcount,'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+         'keyboard' => array(array('�ارسال به همه'),array('راهنما','�مخاطبان','بلاک ها'),array("تنظیمات")),
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
@@ -786,14 +784,14 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 		
 	}
     else if($rpto != "" && $chat_id == $admin){
-    	if($text != "/ban" && $text != "/unban")
+    	if($text != "مسدود" && $text != "حذف مسدود")
     	{
 	apiRequest("sendMessage", array('chat_id' => $rpto, "text" => $text ,"parse_mode" =>"HTML"));
 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🗣پیام شما ارسال شد. " ,"parse_mode" =>"HTML"));
     	}
     	else
     	{
-    		if($text == "/ban"){
+    		if($text == "مسدود"){
     	$txtt = file_get_contents('banlist.txt');
 		$banid= explode("\n",$txtt);
 	if (!in_array($rpto,$banid)) {
@@ -811,7 +809,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 ➖➖➖➖➖➖➖➖➖➖➖
 به لیست سیاه افزوده شد." ,"parse_mode" =>"HTML"));
     		}
-    	if($text == "/unban"){
+    	if($text == "حذف مسدود"){
     	$txttt = file_get_contents('banlist.txt');
 		$banidd= explode("\n",$txttt);
 	if (in_array($rpto,$banidd)) {
