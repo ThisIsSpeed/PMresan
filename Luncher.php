@@ -580,10 +580,9 @@ if($chat_id==$admin){
 ".$pmembersiddd[1]);
 apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"📝پیام خوش آمد گویی به 👇
 
-".$starttext.""."
+".$starttext.ss""."
 
-👆تغییر یافت
-."));
+👆تغییر یافت."));
     
     
     
