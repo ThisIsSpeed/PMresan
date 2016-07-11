@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', '261821389:AAH1XVFOWwWNlI0hZ3HIMVklkAtvMUrdwzk');
+define('BOT_TOKEN', '209358145:AAEXypM1B7ahX8tGhl_vA0ESOG1RjG-aAzE');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -580,7 +580,7 @@ if($chat_id==$admin){
 ".$pmembersiddd[1]);
 apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"📝پیام خوش آمد گویی به 👇
 
-".$starttext.ss""."
+".$starttext.""."
 
 👆تغییر یافت."));
     
