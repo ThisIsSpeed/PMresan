@@ -415,7 +415,7 @@ Get Out Of Here Idiot🖕
 		$memcout = count($membersidd)-1;
 	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
-        'keyboard' => array(array('To All'),array('Help',' Members','banlist'),array("settings")),,
+        'keyboard' => array(array('To All'),array('Help',' Members','banlist'),array("settings")),
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
@@ -561,9 +561,8 @@ $pmembersid= explode("\n",$txxt);
 
 }
 if($chat_id==$admin){
-  apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => ' سلام قربان حوش آمدید😉
-برای پاسخ روی پیام مورد نظر ریپلای کنید و متن خود را بنویسید 😎
-برای آشنایی دکمه ی ⚓️ Help️ را بزنید 👌😃
+  apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => ' سلام حوش آمدید😉
+برای پاسخ روی پیام مورد نظر ریپلای کنید و متن خود را بنویسید �
 .',"parse_mode"=>"MARKDOWN", 'reply_markup' => array(
         'keyboard' => array(array('To All'),array('Help',' Members','banlist'),array("settings")),
         'one_time_keyboard' => true,
@@ -707,7 +706,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
     		file_put_contents('pmembers.txt',"");
     		apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => 'لیست مخاطبین پاک شد ✔️
 .', 'reply_markup' => array(
-        'keyboard' => array(array('To All'),array('Help',' Members','banlist'),array("settings")),),
+        'keyboard' => array(array('To All'),array('Help',' Members','banlist'),array("settings")),
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
@@ -724,7 +723,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
         'selective' => true,
         'resize_keyboard' => true)));
     }
-    else if ($text == "🔙 Back" && $chat_id==$admin) {
+    else if ($text == "Back" && $chat_id==$admin) {
     		apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => 'سلام حوش آمدید😉
 برای پاسخ روی پیام مورد نظر ریپلای کنید و متن خود را بنویسید �
 .', 'reply_markup' => array(
